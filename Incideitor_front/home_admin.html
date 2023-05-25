@@ -12,13 +12,16 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
     <div class="container-fluid">
+        <!--Header-->
         <header class="row tittle d-flex align-items-center">
             <h1 class="ayuntamiento text-center">Ayuntamiento de Mijas</h1>
         </header>
+        <!--Navbar-->
         <div class="col-12">
             <nav class="nav navbar navbar-expand-lg" aria-label="Eleventh navbar example">
                 <div class="container-fluid d-flex">
@@ -67,74 +70,53 @@
                 </div>
             </nav>
         </div>
-
-        <main>
-            <div class="text-center row tutorial py-5">
-                <div class="col-12 col-lg-6 p-lg-12 mx-auto ">
-                    <video src="video/112-113.mp4" class="video_tutorial" controls> Video</video>
-                </div>
-                <div class="col-md-6 d-none d-lg-block">
-                    <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique recusandae aperiam veritatis voluptatem, ipsum aut sunt 
-                        perspiciatis in minima eum facere doloribus qui, molestias ducimus dolores ab eius nemo tenetur.</span>
+        <!--Main-->
+        <main class="container-fluid flex-nowrap d-flex">
+            <!--Sidebar-->
+            <div class="col-auto px-0 mt-2 sidebar bg-body-secondary rounded-1 border">
+                <div class="d-flex flex-column m-2">
+                    <a href="home_admin.html" class="d-flex align-items-center mb-md-0 me-md-auto text-black text-decoration-none">
+                        <span class="fs-5 d-none d-md-inline">Panel de <br class="d-lg-none"> Administración</span>
+                    </a>
+                    <hr class="p-0 d-none d-md-inline">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="home_admin.html" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="incidencias_admin.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-card-list"></i> <span class="ms-1 d-none d-sm-inline">Incidencias</span></a>
+                        </li>
+                        <li>
+                            <a href="usuarios_admin.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Usuarios</span> </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-danger">
+                                <i class="fs-4 bi-flag"></i> <span class="ms-1 d-none d-sm-inline">Reportes</span> </a>
+                            <ul class="collapse flex-column ms-1 ps-2" id="submenu1" data-bs-parent="#menu">
+                                <li>
+                                    <a href="#" class="nav-link px-0 text-danger"><i class="fs-4 bi-list-check"></i> <span class="d-none d-sm-inline">Incidencias</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0 text-danger"><i class="fs-4 bi-bug"></i> <span class="d-none d-sm-inline">Bugs</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <section class="row noticias">
-                <div class="arreglos col-12">
-                    <h3 class="text-center">Arreglos recientes</h2>
+            <!--Contenido-->
+            <div class="col-10 py-2 mx-3">
+                <div>
+                    <span>Bienvenido al panel de Administración. <br> Elije en el panel de la izquierda la opción deseada.</span>
                 </div>
-                <div class="album bg-body-tertiary">
-                <div class="container-fluid">
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 px-5 py-3">
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-body-secondary">9 mins</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-body-secondary">9 mins</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-body-secondary">9 mins</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </section>
+            </div>
         </main>
-
+        
+        <!--Footer-->
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 px-5 border-top">
             <div class="col mb-3">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">

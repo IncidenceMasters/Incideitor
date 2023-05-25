@@ -7,54 +7,33 @@
 
 /*Header*/
 .ayuntamiento{
-    background: #83B5D1;
     text-transform: uppercase; 
-    color: #333;
+    color: black;
     padding: 0.5em;
        
 }
 
 
 /*Nav*/
-.nav{
-    background: #fff;
-    justify-content: space-between;
-    position: relative;
-    
+header[class~=tittle]{
+    height: 75px;
+    background-image: url("../img/VistaPanoramicaMijas.jpg");
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*Letras del nav y del footer*/
-.nav-item{
-    font-weight: 500;
-}
 
-/*Efecto del nav y estilo de las letras*/
+/* Tutorial*/
 
-header ul li a{
-    position: relative;
-    text-decoration: none;
-    font-size: 1em;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-left: 6em;
+.tutorial{
+    background-image: url(../img/wall.jpg); 
+    background-position: 50%;
 }
-header ul li a::before{
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background: #333;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    transform-origin: right;
+.video_tutorial{
+    min-height: 300px;
+    max-width: 100%;
 }
-header ul li a:hover::before{
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
 
 /*Seccion noticias*/
 .noticias{
@@ -76,4 +55,16 @@ header ul li a:hover::before{
 footer{
     background-image: url(/img/shutterstock_617032220.0.jpg);
     background-size: cover;
+}
+
+/* Administracion */
+tr{
+    text-align: center;
+    vertical-align: middle;
+}
+.sidebar{
+    min-height: 70vh;
+}
+li::marker{
+    font-size: 0px;
 }
